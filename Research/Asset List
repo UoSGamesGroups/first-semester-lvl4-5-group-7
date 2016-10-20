@@ -1,0 +1,27 @@
+Core Assets:
+  -Player character sprites
+  -Shop counter
+  -3 - 5x NPC sprites
+
+Background Assets
+  -Bookshelf (Empty/Stacked)
+  -Books
+  -Piano (Broken/Fixed)
+  -Statue/Trinket (Variety of types, given by NPCs)
+  -Windows (Trashed/Fixed?)
+  -Candles (maybe we could have a day/night cycle?)
+  -Skybox (Day/Night)
+  -Pens/pencils/quills/writing utensils
+  -Logbook?
+  -Waiting area
+  
+GUI Assets
+  -Customer likes/dislikes overlay
+  -Customer likes/dislikes call button
+  -Time counter
+  -Happiness/currency stat
+  -Book selection icon
+  -Time of day
+  -Customer id icon?
+  -day intermission HUD
+  -Splash screen?
