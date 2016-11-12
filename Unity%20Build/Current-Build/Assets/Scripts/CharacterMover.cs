@@ -3,29 +3,52 @@ using System.Collections;
 
 public class CharacterMover : MonoBehaviour {
 
-    public Transform mover;
+    public SpriteRenderer character;
+    [Range(0.0f, 20.0f)]
+    public float characterSpeed;
+    public float timeUntilAppear = 15;
 
 	void Start ()
     {
-        this.gameObject.SetActive(false);
-        mover.position = new Vector3(10, -1, 0);
+        character.gameObject.transform.position = new Vector3(10, -1, 0);
+        character.enabled = false; 
 	}
 
-    void CharacterEnterStore()
+  /*  void CharacterEnterStore()
     {
-        this.gameObject.SetActive(true);
-    }
-
-    void CharacterLeaveStore()
+        while (this.gameObject.activeSelf == false)
+        {
+            timeUntilAppear -= Time.deltaTime;
+            if (timeUntilAppear <= 0)
+            {
+                this.gameObject.SetActive(true);
+                timeUntilAppear = 15;
+            }
+        }
+    } */
+    
+   /* void CharacterLeaveStore()
     {
         this.gameObject.SetActive(false);
-    }
+    } */
 
     void Update ()
     {
-	    while (isActiveAndEnabled == true)
+        if (Input.GetMouseButtonDown(0))
         {
-            mover.Translate(-2, 0, 0);
+            character.enabled = true;
+        }
+        if (Input.GetMouseButtonDown(1))
+        {
+            character.enabled = false;
+            character.gameObject.transform.position = new Vector3(10, -1, 0);
+        }
+        if (character.enabled == true)
+        {
+            if (character.gameObject.transform.position.x >= -4)
+            {
+                character.gameObject.transform.Translate(Vector3.left * characterSpeed * Time.deltaTime);
+            }  
         }
 	}
 }
