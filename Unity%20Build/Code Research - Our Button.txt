@@ -1,0 +1,7 @@
+Buttons work with 
+void OnMouseUpAsButton (){
+[Intended button press result code here]
+}
+
+For this to work the buttons will need colliders,
+However to prevent the buttons being pressed while they are not meant to be on screen the colliders will need to be enabled by the same trigger that is used to get the customer to move to the counter. And then disabled by the same trigger that is used for the customer to leave.
