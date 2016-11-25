@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Funiture_update_program
+{
+    class Funiture
+    {
+        private int funitureState = 0;
+        private int currentMoney = 75;
+        private int moneyToNext = 100;
+
+
+        public Funiture()
+        {
+            
+        }
+
+        void FunitureUpdate()
+        {
+            if (currentMoney < moneyToNext)
+            {
+                // normal graphics
+            }
+            else if(currentMoney >= moneyToNext)
+            {
+                funitureState++;
+                moneyToNext += 100;
+            }
+        }
+
+        void funitureDisplay()
+        {
+
+        }
+    }
+}

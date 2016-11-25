@@ -1,0 +1,53 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BookSellingandBuying
+{
+    
+    class Book
+    {
+
+        Dictionary<string, bool> dic = new Dictionary<string, bool>();
+
+        string currentBook;
+        public Book()
+        {
+            dic.Add("Action", true);
+            dic.Add("Comic", true);
+            dic.Add("Horror", true);
+            dic.Add("References", true);
+            dic.Add("Romance", true);
+            dic.Add("TextBook", true);
+            dic.Add("Comedy", true);
+            dic.Add("Colouring", true);
+            dic.Add("Magasine", true);
+            
+            currentBook = "Action";
+        }
+
+        void SellBook (string input)
+        {
+            dic.Add(input, false);
+        }
+
+        void BuyBook(string input)
+        {
+            dic.Add(input, true);   
+        }
+
+        void DisplayBook(string input)
+        {   
+            currentBook = input;
+        }
+
+        void HideBook(string input)
+        {
+            //hide book current
+            currentBook = "Empty";
+
+        }
+    }
+}
