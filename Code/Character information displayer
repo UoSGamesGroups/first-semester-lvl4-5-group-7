@@ -1,0 +1,98 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Characterinformation
+{
+    class CharacterInfoDisplay
+    {
+        int CurrentCharacterID;
+        int CurrentCharacterBondLevel = 0;
+
+        string CurrentCharacterName;
+        int CurrentCharacterAge;
+        string[] CurrentCharacterHates;
+        string[] CurrentCharacterLoves;
+        string[] CurrentCharacterSoSos;
+
+        int CurrentCharacterInteligence;
+        int CurrentCharacterHumour;
+        int CurrentCharacterBravery;
+
+        public CharacterInfoDisplay()
+        {
+            //Get stats from character database or datastructure
+        }
+
+        public void CharacterDispalyinfo()
+        {
+            switch (CurrentCharacterBondLevel)
+            {
+                case 0:
+                    //Image of character comes when you have name and age
+                    Console.Out.WriteLine("Name: ???    Age: ???");
+                    Console.Out.WriteLine("Loves: ???    Neutrals: ???    Hates: ???");
+                    Console.Out.WriteLine("Inteligence: ???    Humour: ???    Bravery: ???");
+                    break;
+
+                case 1:
+                    //Image of character comes when you have name and age
+                    Console.Out.WriteLine("Name: " + CurrentCharacterName + "    Age: " + CurrentCharacterAge);
+                    Console.Out.WriteLine("Loves: ???    Neutrals: ???    Hates: ???");
+                    Console.Out.WriteLine("Inteligence: ???    Humour: ???    Bravery: ???");
+                    break;
+
+                case 2:
+                    //Image of character comes when you have name and age
+                    Console.Out.WriteLine("Name: " + CurrentCharacterName + "    Age: " + CurrentCharacterAge);
+                    Console.Out.WriteLine("Loves: ???    Neutrals: " + CurrentCharacterSoSos + "    Hates: ???");
+                    Console.Out.WriteLine("Inteligence: ???    Humour: ???    Bravery: ???");
+                    break;
+
+                case 3:
+                    //Image of character comes when you have name and age
+                    Console.Out.WriteLine("Name: " + CurrentCharacterName + "    Age: " + CurrentCharacterAge);
+                    Console.Out.WriteLine("Loves: ???    Neutrals: " + CurrentCharacterSoSos + "    Hates: ???");
+                    Console.Out.WriteLine("Inteligence: " + CurrentCharacterInteligence + "    Humour: ???    Bravery: ???");
+                    break;
+
+                case 4:
+                    //Image of character comes when you have name and age
+                    Console.Out.WriteLine("Name: " + CurrentCharacterName + "    Age: " + CurrentCharacterAge);
+                    Console.Out.WriteLine("Loves: ???    Neutrals: " + CurrentCharacterSoSos + "    Hates: ???");
+                    Console.Out.WriteLine("Inteligence: " + CurrentCharacterInteligence + "    Humour: ???    Bravery: " + CurrentCharacterBravery);
+                    break;
+
+                case 5:
+                    //Image of character comes when you have name and age
+                    Console.Out.WriteLine("Name: " + CurrentCharacterName + "    Age: " + CurrentCharacterAge);
+                    Console.Out.WriteLine("Loves: ???    Neutrals: " + CurrentCharacterSoSos + "    Hates: ???");
+                    Console.Out.WriteLine("Inteligence: " + CurrentCharacterInteligence + "    Humour: " + CurrentCharacterHumour + "    Bravery: " + CurrentCharacterBravery);
+                    break;
+
+                case 6:
+                    //Image of character comes when you have name and age
+                    Console.Out.WriteLine("Name: " + CurrentCharacterName + "    Age: " + CurrentCharacterAge);
+                    Console.Out.WriteLine("Loves: ???    Neutrals: " + CurrentCharacterSoSos + "    Hates: " + CurrentCharacterHates);
+                    Console.Out.WriteLine("Inteligence: " + CurrentCharacterInteligence + "    Humour: " + CurrentCharacterHumour + "    Bravery: " + CurrentCharacterBravery);
+                    break;
+
+                case 7:
+                    //Image of character comes when you have name and age
+                    Console.Out.WriteLine("Name: " + CurrentCharacterName + "    Age: " + CurrentCharacterAge);
+                    Console.Out.WriteLine("Loves: " + CurrentCharacterLoves + "    Neutrals: " + CurrentCharacterSoSos + "    Hates: " + CurrentCharacterHates);
+                    Console.Out.WriteLine("Inteligence: " + CurrentCharacterInteligence + "    Humour: " + CurrentCharacterHumour + "    Bravery: " + CurrentCharacterBravery);
+                    break;
+
+                default:
+                    //Image of character comes when you have name and age
+                    Console.Out.WriteLine("Name: " + CurrentCharacterName + "    Age: " + CurrentCharacterAge);
+                    Console.Out.WriteLine("Loves: " + CurrentCharacterLoves + "    Neutrals: " + CurrentCharacterSoSos + "    Hates: " + CurrentCharacterHates);
+                    Console.Out.WriteLine("Inteligence: " + CurrentCharacterInteligence + "    Humour: " + CurrentCharacterHumour + "    Bravery: " + CurrentCharacterBravery);
+                    break;
+            }
+        }
+    }
+}
