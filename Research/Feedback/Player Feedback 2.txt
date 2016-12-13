@@ -1,0 +1,9 @@
+Player Feedback
+
+Playtesters/Feedback Givers
+Charlie Kinglake
+
+Issues
+
+Game starts without giving the player a chance to read the blurbs to understand the books before the game begins to challenge the player
+Player decision time is very short. Fine if the player knows the books but not enough time if they need to read them as well.

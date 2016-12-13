@@ -1,0 +1,17 @@
+Player Feedback
+
+Playtesters/Feedback Givers
+River Chick
+Zac Cooper
+George Flude
+
+Issues
+
+No Game Win screen.
+Books on Timers, not long enough to read the whole thing.
+Books on Timers, but too long while the timer is still playing in background.
+Books on Timers, no control over how long you need to read it.
+Game starts without giving the player a chance to read the books.
+Very short amount of time to select a book when customer comes in.
+
+Also events occur on click which is unclear to players, suggest making them automatic.
